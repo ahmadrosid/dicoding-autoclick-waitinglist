@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Batch Form Submitter</title>
+    <style>
+        body {
+            width: 250px;
+            padding: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        #status {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .progress {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="startBatch">Start Batch Processing</button>
+    <button id="stopBatch">Stop Processing</button>
+    <div id="status"></div>
+    <div class="progress" id="progress"></div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
